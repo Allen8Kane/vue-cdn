@@ -1,4 +1,4 @@
-const url = "https://reqres.in/api/users/2";
+const url = "https://reqres.in/api/users?page=1";
 const vm = new Vue({
         el: '#app',
         data: {

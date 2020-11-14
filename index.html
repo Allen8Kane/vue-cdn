@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{ results.first_name }}</h1>
+        <h1 v-for="result in results">{{ result.first_name }}</h1>
     </div>
     <script src="script.js"></script>
 </body>
