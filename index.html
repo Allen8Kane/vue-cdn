@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue"></script>
@@ -24,7 +23,7 @@
     </header> 
     <div class="container" >
     <h1>All users</h1>
-    <div id="app" >
+    <div id="app">
     <div class="alert alert-info" v-for="result in results">
         <h2>{{result.first_name}}</h2>
         <p>{{result.email}}</p>
