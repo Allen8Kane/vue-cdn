@@ -1,4 +1,4 @@
-const url = "https://reqres.in/api/users?page=2";
+const url = "http://127.0.0.1:5000/users"; 
 const vm = new Vue({
         el: '#app',
         data: {
@@ -6,7 +6,7 @@ const vm = new Vue({
         },
         mounted() {
           axios.get(url).then(response => {
-            this.results = response.data.data
+            this.results = response.data
           })
         }
       });
